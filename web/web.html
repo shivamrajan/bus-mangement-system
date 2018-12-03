@@ -1,0 +1,177 @@
+<html>
+<head>
+
+<style>
+h1 {
+    color: black;
+    font-family: verdana;
+    font-size:60%;
+}
+.zoomin img { height: 100px; width: 100px;
+ -webkit-transition: all 2s ease;
+ -moz-transition: all 2s ease; -ms-transition:
+ all 2s ease; transition: all 2s ease; }
+ .zoomin img:hover { width: 200px; height: 200px; }
+ 
+div.background {
+  background: url(images/bus.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: coral}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    </style>
+</head>
+<body background="images/bus.jpg">
+	<div class="background">
+		<div class="transbox">
+<h1><font size ="8" color="red" face ="Garamond">
+	<center>Bus Schedule Management System<img src="images/hh.jpg"/ height="80" width="80"></center>
+
+    
+</h1>
+            
+        
+        </div>
+        
+</div>
+	<marquee><h4>WELCOME TO OUR WEBSITE</h4></marquee>
+    
+    <div class ="div4">
+    	<ul>
+    		<li><a href="web.html">HOME</a></li>
+    		
+    		<li><a href="busschedule.html">BUS SCHEDULES </a></li>
+    		<li><a href="img.html">IMAGE GALARY</a></li>
+    		<li><a href="businfo.html">BUS INFO</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+    		<li><a href="index.html">LOG OUT</a></li>
+    		
+    	</ul>
+    </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+    <h4 class="w3-center"><center> A GLANCE TO YOUR RIDES</center></h4>
+<div style="background-color:black;color:white;padding:20px;">
+<div class="w3-content w3-section" style="max-width:1000px">
+		<img class="mySlides" src="images/v1.jpg" style="width:80%">
+  <img class="mySlides" src="images/v2.jpg" style="width:75%">
+  <img class="mySlides" src="images/v3.jpg" style="width:80%">
+  <img class="mySlides" src="images/v4.jpg" style="width:90%">
+  <img class="mySlides" src="images/v5.jpg" style="width:90%">
+  <img class="mySlides" src="images/v6.jpg" style="width:90%">
+  <img class="mySlides" src="images/v7.jpg" style="width:90%">
+  <img class="mySlides" src="images/v8.jpg" style="width:78%">
+	</div>
+</div>
+<h2>Contact us .We will love to help  you.</h2>
+
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+
+</script>
+    </a>
+    </a>
+    </a></a></div>
+</body>
+    </div>
+    </body>
+</html>

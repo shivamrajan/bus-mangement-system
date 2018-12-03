@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+h1 
+    div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+}
+
+li {
+    float: left;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+<body background="images/bus.jpg">
+
+
+
+<div class="background">
+  <div class="transbox">
+  <h1><font color="white">BUS Info</font></h1>
+  </div>
+</div>
+
+<ul>
+        <li><a href="web.html">HOME</a></li>
+       
+        <li><a href="busschedule.html">BUS SCHEDULES </a></li>
+        <li><a href="img.html">IMAGE GALARY</a></li>
+        <li><a href="businfo.html">BUS INFO</a></li>
+         <li><a href="aboutus.html">ABOUT US</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="index.html">LOG OUT</a></li>
+      
+
+</ul>
+<div style="background-color:white;color:white;padding:20px;">
+<div class="w3-container">
+
+
+<div style="background-color:orangered;color:white;padding:20px;">
+  <h2>VOLVO Buses</h2>
+  </div>
+<div style="background-color:black;color:white;padding:20px;">  
+   <img src="images/v1.jpg" alt="HTML5 Icon" style="width:700px;height:400px;">
+</div>
+<div style="background-color:red;color:white;padding:20px;">
+  <p>12000 mm length, 2600mm width,3620mm height and 6200mm wheelbase bus developed for passenger transport. The bus is comfort for long distance travel.Full air suspension.This bus is provided with good branded "Carrier" make air-conditioner with excellent cooling effect to make the journey comfortable & cool.This bus is provided with 44 nos 2X2 comfortable, luxurious passenger seats.Mobileand Lap Top chargers are provided for passengers use.For the enteratainment of the passengers 21" TV &CD player is provided.Window glasses are toughened and provided clear vision to passengers.Front panel is desined to increase the driver's vision area and aesthetic look of the bus.Luggage space is provided under passenger seating area.
+The bus is fitted with powerful,fuel efficient and electronically controlled engine with a turbocharger and intercooler, Euro III compliant.<br> 
+
+<hr>
+
+<div style="background-color:orangered;color:white;padding:20px;">
+     <h2>ISUZU BUSES</h2>
+  </div>
+
+<div style="background-color:black;color:white;padding:20px;">
+  <img src="images/b7.jpg" alt="HTML5 Icon" style="width:700px;height:400px;">
+</div>
+
+<div style="background-color:red;color:white;padding:20px;">
+  <p>11400 mm length Luxury bus Bharat stage-III, 230 HP RearEngine is built for passenger transport.Full air conditioned with "Denso" air-conditioner and heater.The bus is provided with 40 nos 2X2 comfortable, luxurious passenger seats.For the enteratainment of the passengers LCD and foldable TV is provided.Window glasses are toughened and provided clear vision to passengers.Front panel is desined to increase the driverâ€™s vision area and aesthetic look of the bus.Luggage space is provided under passenger seating area.<br></p>
+  
+</div>
+<hr>
+<div style="background-color:orangered;color:white;padding:20px;">
+  <h2>SCANIA</h2>
+  </div>
+<div style="background-color:black;color:white;padding:20px;">
+ <img src="images/v6.jpg" alt="HTML5 Icon" style="width:700px;height:400px;">
+</div>
+
+
+<div style="background-color:orangered;color:white;padding:20px;">
+  <p>Constructed on 166" WB & 218" WB Chassis.The bus is provided with 2X2 comfortable, luxurious passenger seats.Emergency door is provided behind the Rear Axle at right side of the bus for more safety to passengers.Lights have been provided above each twin seat alongwith speaker and call bell switches.Fitted with single windshield laminated glass.Heavy duty fans of 8" size provided.21" TV and Music system is provided for the entertainment of passengers.<br><mark></p>
+ 
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
